@@ -35,7 +35,10 @@ for (year in 2022:2016){
 }
 
 year <- 1
-while (year < 6) {
-  print(year)
+while (year < 10) {
+  if (year %% 2 == 0) {
+    print(year)
+  }
   year <- year + 1
 }
+
