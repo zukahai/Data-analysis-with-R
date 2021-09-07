@@ -66,3 +66,6 @@ install.packages("xlsx")
 library("xlsx")
 data <- read.xlsx("input.xlsx", sheetIndex = 1)
 print(data)
+
+#luu du lieu sau khi xu ly
+write.csv(d, file = "D://dataset//my_data.csv")
