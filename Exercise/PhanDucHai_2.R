@@ -199,7 +199,12 @@ names(list_data) <- c("String", "String", "Int", "Float", "Boolean", "Vector", "
 print(list_data)
 print(list_data$String)
 
-mt <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 2)
+mt <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 4)
 print(mt)
 
+my.name <- readline(prompt="Enter name: ")
+my.age <- readline(prompt="Enter age: ")
+# convert character into integer
+my.age <- as.integer(my.age)
+print(paste("Hi,", my.name, "next year you will be", my.age+1, "years old."))
 
