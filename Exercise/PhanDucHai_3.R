@@ -56,8 +56,8 @@ dim(education)
 data=read.table(file="http://www.sthda.com/upload/decathlon.txt", header=T, row.names=1, sep="\t")
 dim(data)
 
+#xoa cac bien da lua
 rm(list=ls())
-# %>% pip
 
 install.packages("dplyr")
 library("dplyr")
