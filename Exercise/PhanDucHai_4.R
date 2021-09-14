@@ -47,3 +47,32 @@ dim(kq2)
 q1 <- distinct(full)
 dim(full)
 dim(q1)
+
+#cach 2
+unique(full)
+
+
+#row no have missing value
+
+sum(!complete.cases(full))
+which((is.na(full)))
+
+#repale 
+
+edit(full)
+full$Age[is.na(full$Age)] <- 0
+View(full)
+
+#avg
+
+ori <- rbind(df1, df3)
+test <- ori
+dim(test)
+tbAge <- mean(ori$Age, na.rm = TRUE)
+tbAge
+ 
+test$Age[is.na(test$Age)] <- mean(ori$Age, na.rm = TRUE)
+show(test)
+
+
+library(ggplot2)
